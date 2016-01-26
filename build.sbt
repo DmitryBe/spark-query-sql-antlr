@@ -10,6 +10,6 @@ retrieveManaged := true
 libraryDependencies ++= {
   Seq(
     "org.scalatest" % "scalatest_2.10" % "2.0" % "provided"
-   ,"org.antlr" % "antlr4" % "4.5" % "provided"
+//   ,"org.antlr" % "antlr4" % "4.5"
   )
 }

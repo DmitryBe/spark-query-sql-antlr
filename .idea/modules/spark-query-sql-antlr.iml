@@ -21,51 +21,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library name="SBT: org.abego.treelayout:org.abego.treelayout.core:1.0.1:jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../lib_managed/jars/org.abego.treelayout/org.abego.treelayout.core/org.abego.treelayout.core-1.0.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library name="SBT: org.antlr:ST4:4.0.8:jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../lib_managed/jars/org.antlr/ST4/ST4-4.0.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library name="SBT: org.antlr:antlr-runtime:3.5.2:jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../lib_managed/jars/org.antlr/antlr-runtime/antlr-runtime-3.5.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library name="SBT: org.antlr:antlr4:4.5:jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../lib_managed/jars/org.antlr/antlr4/antlr4-4.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library name="SBT: org.antlr:antlr4-runtime:4.5:jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../lib_managed/jars/org.antlr/antlr4-runtime/antlr4-runtime-4.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="module-library">
       <library name="SBT: org.scala-lang:scala-library:2.10.4:jar" type="Scala">
         <properties>
@@ -95,6 +50,15 @@
       <library name="SBT: org.scalatest:scalatest_2.10:2.0:jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../lib_managed/jars/org.scalatest/scalatest_2.10/scalatest_2.10-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="SBT: unmanaged-jars">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/antlr-4.5.1-complete.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
