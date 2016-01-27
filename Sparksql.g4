@@ -40,7 +40,7 @@ column_name_list
 query_specification
     : SELECT (ALL | DISTINCT)? (TOP expression PERCENT? (WITH TIES)?)?
       select_list
-      (INTO into_table=table_name)?
+      //(INTO into_table=table_name)?
       (FROM table_source (',' table_source)*)?
       (WHERE where=search_condition)?
       (GROUP BY group_by_item (',' group_by_item)*)?
@@ -143,7 +143,6 @@ column_alias
     : id_1
     | STRING
     ;
-
 
 expression
     : DEFAULT
@@ -263,6 +262,7 @@ comparison_operator
 
 simple_id
     : ID
+    | ORDER
     | ABSOLUTE
     | APPLY
     | AUTO
