@@ -6,23 +6,30 @@ import org.antlr.v4.runtime.{BailErrorStrategy, CommonTokenStream, ANTLRInputStr
 
 import scala.util.{Failure, Success, Try}
 
+case class SqlParserResult(tree: ParseTree, treeStr: String)
+
 object SqlQueryParser {
 
-  def parse(sql: String): Try[ParseTree] ={
+  def parse(sql: String): Try[SqlParserResult] ={
 
     val input: ANTLRInputStream = new ANTLRInputStream(sql)
     val lexer: SparksqlLexer = new SparksqlLexer(input)
     val tokens: CommonTokenStream = new CommonTokenStream(lexer)
     val parser: SparksqlParser = new SparksqlParser(tokens)
-    parser.removeErrorListeners()
-    parser.setErrorHandler(new BailErrorStrategy())
+    //parser.removeErrorListeners()
+    parser.addErrorListener(new CustomErrorListener())
 
     try {
       val tree = parser.root()
-      Success(tree)
+      val treeStr = tree.toStringTree(parser)
+      val result = SqlParserResult(tree, treeStr)
+      Success(result)
     }
     catch {
-      case ex: RuntimeException => {
+      case ex: SqlInvalidException =>{
+        Failure(ex)
+      }
+      case ex: Throwable => {
         Failure(ex)
       }
     }

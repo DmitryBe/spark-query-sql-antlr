@@ -100,7 +100,7 @@ class TestQuerySchemaGenerator extends FlatSpec with Matchers{
           println()
           println(sql)
           val visitor = new QuerySchemaGenerator()
-          val schema = visitor.getSchema(tree)
+          val schema = visitor.getSchema(tree.tree)
           println(schema)
 
           // expected tables
@@ -117,7 +117,7 @@ class TestQuerySchemaGenerator extends FlatSpec with Matchers{
         }
 
         case Failure(ex) => {
-          throw new Exception(ex)
+          throw ex
         }
       }
 

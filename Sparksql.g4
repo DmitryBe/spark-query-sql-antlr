@@ -110,7 +110,7 @@ table_name_with_hint
 
 
 as_table_alias
-    : AS? table_alias
+    : AS table_alias
     ;
 
 table_alias
