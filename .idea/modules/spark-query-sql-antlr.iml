@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="spark-query-sql-antlr" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/../../target/scala-2.10/classes" />
     <output-test url="file://$MODULE_DIR$/../../target/scala-2.10/test-classes" />
     <exclude-output />
@@ -30,8 +30,39 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.10.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="SBT: org.scala-lang:scala-reflect:2.10.0:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="SBT: org.scalatest:scalatest_2.10:2.0:jar" level="project" />
+    <orderEntry type="module-library">
+      <library name="SBT: org.scala-lang:scala-library:2.10.4:jar" type="Scala">
+        <properties>
+          <compiler-classpath>
+            <root url="file://$USER_HOME$/.sbt/boot/scala-2.10.4/lib/scala-compiler.jar" />
+            <root url="file://$USER_HOME$/.sbt/boot/scala-2.10.4/lib/scala-library.jar" />
+            <root url="file://$USER_HOME$/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar" />
+          </compiler-classpath>
+        </properties>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.sbt/boot/scala-2.10.4/lib/scala-library.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="SBT: org.scala-lang:scala-reflect:2.10.0:jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib_managed/jars/org.scala-lang/scala-reflect/scala-reflect-2.10.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="SBT: org.scalatest:scalatest_2.10:2.0:jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib_managed/jars/org.scalatest/scalatest_2.10/scalatest_2.10-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

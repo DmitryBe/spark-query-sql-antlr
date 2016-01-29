@@ -75,7 +75,7 @@ class TestQuerySchemaGenerator extends FlatSpec with Matchers{
   )
 
   validateSQL(
-    "select * from microbiome t where t.superkingdom  is not null and t.microbiome_id is not null and t.name is not null",
+    "select * from microbiome as t where t.superkingdom  is not null and t.microbiome_id is not null and t.name is not null",
     List[(String, String)](("microbiome", "t")),
     List[(String, String)](("*", "_"), ("superkingdom", "t"), ("microbiome_id", "t"), ("name", "t"))
   )

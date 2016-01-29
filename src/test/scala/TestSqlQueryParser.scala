@@ -23,7 +23,12 @@ class TestSqlQueryParser extends FlatSpec with Matchers{
   shouldPass("SELECT chromosome ,position ,ref ,alt ,sum(allele_count) / (count (distinct sample_id)) as allele_frequency FROM (SELECT chromosome ,position ,ref ,alt ,sample_id ,CASE WHEN gt0 = '1' AND gt1 = '1' then 2 else 1 END as allele_count FROM vcf.samples as s WHERE s.filter = 'PASS') as v GROUP BY chromosome ,position ,ref ,alt limit 10")
 
   shouldFail("sele * from tab1")
+  shouldFail("select * from1 tab1")
+  shouldFail("select * from tab1 where c ")
   shouldFail("select a, b from")
+  shouldFail("delete tab1")
+  shouldFail("create tab1(id int)")
+  shouldFail("select * from (delete tab1)")
 
   def shouldPass(sql: String): Unit ={
     it should sql in {

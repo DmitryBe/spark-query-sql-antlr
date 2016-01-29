@@ -210,7 +210,7 @@ public class SparksqlBaseVisitor<T> extends AbstractParseTreeVisitor<T> implemen
 	/**
 	 * {@inheritDoc}
 	 *
-	 * <p>The default implementation returns the result of calling
+	 * <p>The default implementatfion returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitExpression(SparksqlParser.ExpressionContext ctx) { return visitChildren(ctx); }
