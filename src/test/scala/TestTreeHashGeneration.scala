@@ -7,9 +7,6 @@ import scala.collection.JavaConversions._
 import scala.util.{Failure, Success}
 
 
-
-
-
 class TestTreeHashGeneration extends FlatSpec with Matchers{
 
   _validate(
