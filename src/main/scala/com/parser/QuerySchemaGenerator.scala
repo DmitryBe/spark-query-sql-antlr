@@ -3,7 +3,7 @@ package com.parser
 import com.antlr.parser.{SparksqlParser, SparksqlBaseVisitor}
 import org.antlr.v4.runtime.tree.ParseTree
 import scala.collection.mutable
-import scala.util.Try
+import scala.util.{Failure, Try, Success}
 import scala.collection.JavaConversions._
 
 
@@ -18,15 +18,31 @@ case class Table(name: String, alias: String, isInternal: Boolean)
 
 case class Column(name: String, table: String, alias: String)
 
+object QuerySchemaGenerator{
+
+  def generate(parseTree: ParseTree): Try[scala.collection.mutable.ListBuffer[SelectStatement]] = {
+
+    val generator = new QuerySchemaGenerator()
+    generator.getSchema(parseTree)
+  }
+
+}
 
 class QuerySchemaGenerator extends SparksqlBaseVisitor[Any]{
 
   val statements = new scala.collection.mutable.ListBuffer[SelectStatement]()
   val stack = new mutable.Stack[SelectStatement]()
 
-  def getSchema(parseTree: ParseTree): scala.collection.mutable.ListBuffer[SelectStatement] = {
-   super.visit(parseTree)
-    statements
+  def getSchema(parseTree: ParseTree): Try[scala.collection.mutable.ListBuffer[SelectStatement]] = {
+
+    try{
+      super.visit(parseTree)
+      Success(statements)
+    }catch{
+      case ex: Throwable => {
+        Failure(ex)
+      }
+    }
   }
 
   override def visitSelect_statement(ctx: SparksqlParser.Select_statementContext) {
