@@ -185,11 +185,23 @@ public interface SparksqlVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitExpression(SparksqlParser.ExpressionContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SparksqlParser#case_expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCase_expr(SparksqlParser.Case_exprContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SparksqlParser#aggregate_windowed_function}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitAggregate_windowed_function(SparksqlParser.Aggregate_windowed_functionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SparksqlParser#function_call}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFunction_call(SparksqlParser.Function_callContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SparksqlParser#all_distinct_expression}.
 	 * @param ctx the parse tree
@@ -238,12 +250,6 @@ public interface SparksqlVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitColumn_name(SparksqlParser.Column_nameContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SparksqlParser#case_expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitCase_expr(SparksqlParser.Case_exprContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SparksqlParser#table_name}.
 	 * @param ctx the parse tree
@@ -298,4 +304,10 @@ public interface SparksqlVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitNull_notnull(SparksqlParser.Null_notnullContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SparksqlParser#data_type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitData_type(SparksqlParser.Data_typeContext ctx);
 }

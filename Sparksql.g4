@@ -149,6 +149,7 @@ expression
     | NULL
     | LOCAL_ID
     | constant
+    | function_call
     | expression COLLATE id_1
     | case_expr
     | full_column_name
@@ -159,11 +160,16 @@ expression
     | op=('+' | '-') expression
     | expression op=('+' | '-' | '&' | '^' | '|') expression
     | expression comparison_operator expression
-    | aggregate_windowed_function
+    ;
+
+case_expr
+    : CASE expression (WHEN expression THEN expression)+ (ELSE expression)? END
+    | CASE (WHEN search_condition THEN expression)+ (ELSE expression)? END
     ;
 
 aggregate_windowed_function
     : AVG '(' all_distinct_expression ')'
+    | ROUND '(' all_distinct_expression ')'
     | CHECKSUM_AGG '(' all_distinct_expression ')'
     | GROUPING '(' expression ')'
     | GROUPING_ID '(' expression_list ')'
@@ -176,6 +182,13 @@ aggregate_windowed_function
     | VARP '(' all_distinct_expression ')'
     | COUNT '(' ('*' | all_distinct_expression) ')'
     | COUNT_BIG '(' ('*' | all_distinct_expression) ')'
+    ;
+
+function_call
+    : aggregate_windowed_function
+    | CAST '(' expression AS data_type ')'
+    | CURRENT_DATE ('(' ')')?
+    | CURRENT_TIMESTAMP ('(' ')')?
     ;
 
 all_distinct_expression
@@ -217,11 +230,6 @@ column_name
     : id_1
     ;
 
-case_expr
-    : CASE expression (WHEN expression THEN expression)+ (ELSE expression)? END
-    | CASE (WHEN search_condition THEN expression)+ (ELSE expression)? END
-    ;
-
 table_name
     : ((schema=id_1)? '.' | schema=id_1 '.')? table=id_1
     ;
@@ -238,7 +246,6 @@ search_condition_not
     : NOT? predicate
     ;
 
-
 predicate
     : EXISTS '(' subquery ')'
     | expression comparison_operator expression
@@ -249,7 +256,6 @@ predicate
     | expression IS null_notnull
     | '(' search_condition ')'
     ;
-
 
 id_1  : simple_id
     | DOUBLE_QUOTE_ID
@@ -267,9 +273,10 @@ simple_id
     | APPLY
     | AUTO
     | AVG
+    | ROUND
     | BASE64
     | CALLER
-    | CAST
+    //| CAST
     | CATCH
     | CHECKSUM_AGG
     | COMMITTED
@@ -374,12 +381,61 @@ null_notnull
     : NOT? NULL
     ;
 
+data_type
+    : BIGINT
+    | BINARY '(' DECIMAL ')'
+    | BIT
+    | BOOLEAN
+    | CHAR '(' DECIMAL ')'
+    | DATE
+//    | DATETIME
+//    | DATETIME2
+//    | DATETIMEOFFSET '(' DECIMAL ')'
+    | DECIMAL '(' DECIMAL ',' DECIMAL ')'
+    | FLOAT
+//    | GEOGRAPHY
+//    | GEOMETRY
+//    | HIERARCHYID
+//    | IMAGE
+    | INT
+//    | MONEY
+//    | NCHAR '(' DECIMAL ')'
+//    | NTEXT
+//    | NUMERIC '(' DECIMAL ',' DECIMAL ')'
+//    | NVARCHAR '(' DECIMAL | MAX ')'
+    | REAL
+//    | SMALLDATETIME
+//    | SMALLINT
+//    | SMALLMONEY
+//    | SQL_VARIANT
+    | TEXT
+    | TIME '(' DECIMAL ')'
+    | TIMESTAMP
+    | TINYINT
+    | UNIQUEIDENTIFIER
+    | VARBINARY '(' DECIMAL | MAX ')'
+    | VARCHAR '(' DECIMAL | MAX ')'
+    | XML
+    //: id IDENTITY? ('(' (DECIMAL | MAX) (',' DECIMAL)? ')')?
+    ;
 
 
 // Lexer
 
 // Basic keywords (from https://msdn.microsoft.com/en-us/library/ms189822.aspx)
 LIMIT:                           L I M I T;
+BIGINT:                          B I G I N T;
+BIT:                             B I T;
+BOOLEAN:                         B O O L E A N;
+CHAR:                            C H A R;
+INT:                             I N T;
+DATE:                            D A T E;
+VARCHAR:                         V A R C H A R;
+VARBINARY:                       V A R B I N A R Y;
+UNIQUEIDENTIFIER:                U N I Q U E I D E N T I F I E R;
+TINYINT:                         T I N Y I N T;
+TIMESTAMP:                       T I M E S T A M P;
+TEXT:                            T E X T;
 ADD:                             A D D;
 ALL:                             A L L;
 ALTER:                           A L T E R;
@@ -571,6 +627,7 @@ ABSOLUTE:                        A B S O L U T E;
 APPLY:                           A P P L Y;
 AUTO:                            A U T O;
 AVG:                             A V G;
+ROUND:                           R O U N D;
 BASE64:                          B A S E '64';
 CALLER:                          C A L L E R;
 CAST:                            C A S T;

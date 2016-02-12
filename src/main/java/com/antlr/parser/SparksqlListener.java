@@ -298,6 +298,16 @@ public interface SparksqlListener extends ParseTreeListener {
 	 */
 	void exitExpression(SparksqlParser.ExpressionContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SparksqlParser#case_expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterCase_expr(SparksqlParser.Case_exprContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SparksqlParser#case_expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitCase_expr(SparksqlParser.Case_exprContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SparksqlParser#aggregate_windowed_function}.
 	 * @param ctx the parse tree
 	 */
@@ -307,6 +317,16 @@ public interface SparksqlListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAggregate_windowed_function(SparksqlParser.Aggregate_windowed_functionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SparksqlParser#function_call}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunction_call(SparksqlParser.Function_callContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SparksqlParser#function_call}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunction_call(SparksqlParser.Function_callContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SparksqlParser#all_distinct_expression}.
 	 * @param ctx the parse tree
@@ -387,16 +407,6 @@ public interface SparksqlListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitColumn_name(SparksqlParser.Column_nameContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SparksqlParser#case_expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterCase_expr(SparksqlParser.Case_exprContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SparksqlParser#case_expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitCase_expr(SparksqlParser.Case_exprContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SparksqlParser#table_name}.
 	 * @param ctx the parse tree
@@ -487,4 +497,14 @@ public interface SparksqlListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitNull_notnull(SparksqlParser.Null_notnullContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SparksqlParser#data_type}.
+	 * @param ctx the parse tree
+	 */
+	void enterData_type(SparksqlParser.Data_typeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SparksqlParser#data_type}.
+	 * @param ctx the parse tree
+	 */
+	void exitData_type(SparksqlParser.Data_typeContext ctx);
 }

@@ -9,6 +9,11 @@ import scala.util.{Success, Failure}
 
 class TestSqlQueryParser extends FlatSpec with Matchers{
 
+  shouldPass("select current_date() as data, current_timestamp() as ts")
+  shouldPass("select col1, CAST(col2 as date) from tab1")
+  shouldPass("select col1, CAST(col2 as int) from tab1")
+  shouldPass("select avg(col1) from tab1")
+  shouldPass("select round(col1) from tab1")
   shouldPass("select * from tab1")
   shouldPass("select a,b,c from table_0")
   shouldPass("select a.c0, a.c1, b.c0, b.c1 from table_a as a, table_b as b where a.c0=b.c0")

@@ -364,6 +364,18 @@ public class SparksqlBaseListener implements SparksqlListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterCase_expr(SparksqlParser.Case_exprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCase_expr(SparksqlParser.Case_exprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterAggregate_windowed_function(SparksqlParser.Aggregate_windowed_functionContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -371,6 +383,18 @@ public class SparksqlBaseListener implements SparksqlListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAggregate_windowed_function(SparksqlParser.Aggregate_windowed_functionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFunction_call(SparksqlParser.Function_callContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFunction_call(SparksqlParser.Function_callContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -467,18 +491,6 @@ public class SparksqlBaseListener implements SparksqlListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitColumn_name(SparksqlParser.Column_nameContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterCase_expr(SparksqlParser.Case_exprContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCase_expr(SparksqlParser.Case_exprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -587,6 +599,18 @@ public class SparksqlBaseListener implements SparksqlListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitNull_notnull(SparksqlParser.Null_notnullContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterData_type(SparksqlParser.Data_typeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitData_type(SparksqlParser.Data_typeContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
