@@ -9,6 +9,7 @@ import scala.util.{Success, Failure}
 
 class TestSqlQueryParser extends FlatSpec with Matchers{
 
+  shouldPass("SELECT x.col_label, COUNT(COALESCE(x.age, -1)) AS itemtotal from (SELECT CASE WHEN (age >= 0 AND age < 19) THEN '0 to 18'WHEN (age >= 19 AND age < 35) THEN '19 to 34'WHEN (age >= 35 AND age < 50) THEN '35 to 49'WHEN (age >= 50 AND age < 65) THEN '50 to 64'WHEN (age >= 65 AND age < 99999) THEN '65 or older'ELSE 'Undefined'END AS col_label, age FROM phenotype.lake_view_phenotype_snomed_aggregate WHERE individual_id IN (5836,7748,9914,10411,775,9801,8226,3243,4723,1536) and v=20160215 ) as x group by x.col_label")
   shouldPass("select current_date() as data, current_timestamp() as ts")
   shouldPass("select col1, CAST(col2 as date) from tab1")
   shouldPass("select col1, CAST(col2 as int) from tab1")

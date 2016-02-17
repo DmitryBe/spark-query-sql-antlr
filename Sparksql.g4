@@ -186,9 +186,13 @@ aggregate_windowed_function
 
 function_call
     : aggregate_windowed_function
+    | BINARY_CHECKSUM '(' '*' ')'
     | CAST '(' expression AS data_type ')'
+    | CONVERT '(' data_type ',' expression (',' style=expression)? ')'
     | CURRENT_DATE ('(' ')')?
     | CURRENT_TIMESTAMP ('(' ')')?
+    | COALESCE '(' expression_list ')'
+    | CHECKSUM '(' '*' ')'
     ;
 
 all_distinct_expression
@@ -629,9 +633,11 @@ AUTO:                            A U T O;
 AVG:                             A V G;
 ROUND:                           R O U N D;
 BASE64:                          B A S E '64';
+BINARY_CHECKSUM:                 B I N A R Y '_' C H E C K S U M;
 CALLER:                          C A L L E R;
 CAST:                            C A S T;
 CATCH:                           C A T C H;
+CHECKSUM:                        C H E C K S U M;
 CHECKSUM_AGG:                    C H E C K S U M '_' A G G;
 COMMITTED:                       C O M M I T T E D;
 CONCAT:                          C O N C A T;
