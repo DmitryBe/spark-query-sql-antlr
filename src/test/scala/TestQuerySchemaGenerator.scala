@@ -8,6 +8,12 @@ import scala.util.{Failure, Success}
 
 class TestQuerySchemaGenerator extends FlatSpec with Matchers{
 
+//  validateSQL(
+//    "select t1.col1 as c1, 't1.col2.f1.sf1' as c2 from table1 as t1",
+//    List[(String, String)](("table1", "t1")),
+//    List[(String,String)](("col1","t1"), ("col2", "t1"))
+//  )
+
   validateSQL(
     "select t.col2, t2.col1, CASE WHEN t.gt0 = '1' AND t.gt1 = '1' then 2 else 1 END as allele_count from tab1 as t inner join tab2 as t2 on t1.c1 = t2.c1",
     List[(String, String)](("tab1", "t"), ("tab2", "t2")),

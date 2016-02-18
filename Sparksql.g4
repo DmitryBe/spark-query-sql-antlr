@@ -433,6 +433,7 @@ BIT:                             B I T;
 BOOLEAN:                         B O O L E A N;
 CHAR:                            C H A R;
 INT:                             I N T;
+FLOAT:                           F L O A T;
 DATE:                            D A T E;
 VARCHAR:                         V A R C H A R;
 VARBINARY:                       V A R B I N A R Y;
@@ -750,7 +751,7 @@ DECIMAL:             DEC_DIGIT+;
 ID:                  [a-zA-Z_#][a-zA-Z_#$@0-9]*;
 STRING:              N? '\'' (~'\'' | '\'\'')* '\'';
 BINARY:              '0' X HEX_DIGIT*;
-FLOAT:               DEC_DOT_DEC;
+//FLOAT:               DEC_DOT_DEC;
 REAL:                DEC_DOT_DEC (E [+-]? DEC_DIGIT+)?;
 
 EQUAL:               '=';
