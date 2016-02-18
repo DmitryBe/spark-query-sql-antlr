@@ -496,6 +496,18 @@ public class SparksqlBaseListener implements SparksqlListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterId_2(SparksqlParser.Id_2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitId_2(SparksqlParser.Id_2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterTable_name(SparksqlParser.Table_nameContext ctx) { }
 	/**
 	 * {@inheritDoc}

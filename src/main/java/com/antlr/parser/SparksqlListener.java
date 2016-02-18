@@ -408,6 +408,16 @@ public interface SparksqlListener extends ParseTreeListener {
 	 */
 	void exitColumn_name(SparksqlParser.Column_nameContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SparksqlParser#id_2}.
+	 * @param ctx the parse tree
+	 */
+	void enterId_2(SparksqlParser.Id_2Context ctx);
+	/**
+	 * Exit a parse tree produced by {@link SparksqlParser#id_2}.
+	 * @param ctx the parse tree
+	 */
+	void exitId_2(SparksqlParser.Id_2Context ctx);
+	/**
 	 * Enter a parse tree produced by {@link SparksqlParser#table_name}.
 	 * @param ctx the parse tree
 	 */

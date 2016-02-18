@@ -231,7 +231,14 @@ full_column_name
     ;
 
 column_name
-    : id_1
+    : id_2
+    ;
+
+// support column names like: table1.column1.field1
+id_2  : simple_id
+    | simple_id '.' simple_id
+    | DOUBLE_QUOTE_ID
+    | SQUARE_BRACKET_ID
     ;
 
 table_name
@@ -280,7 +287,7 @@ simple_id
     | ROUND
     | BASE64
     | CALLER
-    //| CAST
+//    | CAST
     | CATCH
     | CHECKSUM_AGG
     | COMMITTED

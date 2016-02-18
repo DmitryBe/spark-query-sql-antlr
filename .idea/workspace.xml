@@ -4,10 +4,11 @@
     <list default="true" id="886e7aa3-2c62-47dc-8685-6b1b689c7cf6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sparksql.g4" afterPath="$PROJECT_DIR$/Sparksql.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/antlr/parser/Sparksql.tokens" afterPath="$PROJECT_DIR$/src/main/java/com/antlr/parser/Sparksql.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlLexer.java" afterPath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlLexer.tokens" afterPath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlLexer.tokens" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlBaseListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlBaseListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlBaseVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlBaseVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala" afterPath="$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/TestSqlQueryParser.scala" afterPath="$PROJECT_DIR$/src/test/scala/TestSqlQueryParser.scala" />
     </list>
@@ -85,17 +86,7 @@
         <entry file="file://$PROJECT_DIR$/Sparksql.g4">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="435" column="43" selection-start-line="435" selection-start-column="43" selection-end-line="435" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestSqlQueryParser.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/TestSqlQueryParser.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20454545">
-              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+              <caret line="226" column="5" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -105,7 +96,27 @@
         <entry file="file://$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="10" selection-start-column="2" selection-end-line="14" selection-end-column="5" />
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestTreeHashGeneration.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/TestTreeHashGeneration.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSqlQueryParser.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/TestSqlQueryParser.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09090909">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -141,9 +152,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/parser/QueryHashGenerator.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TestTreeHashGeneration.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/parser/QuerySchemaGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala" />
         <option value="$PROJECT_DIR$/Sparksql.g4" />
         <option value="$PROJECT_DIR$/src/test/scala/TestSqlQueryParser.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala" />
       </list>
     </option>
   </component>
@@ -319,7 +330,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="ScalaTest.TestQuerySchemaGenerator">
+  <component name="RunManager" selected="ScalaTest.TestSqlQueryParser">
     <configuration default="false" name="TestSqlQueryParser" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="spark-query-sql-antlr" />
@@ -717,9 +728,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.TestQuerySchemaGenerator" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.TestSqlQueryParser" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.TestTreeHashGeneration" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.TestSqlQueryParser" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.TestTreeHashGeneration" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.TestQuerySchemaGenerator" />
         <item index="3" class="java.lang.String" itemvalue="ScalaTest.Exp" />
         <item index="4" class="java.lang.String" itemvalue="ScalaTest.Test1" />
       </list>
@@ -775,35 +786,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 09h 34m 33s.xml">
+    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 11h 04m 21s.xml">
       <configuration name="TestQuerySchemaGenerator" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 09h 35m 42s.xml">
+    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 11h 05m 04s.xml">
       <configuration name="TestQuerySchemaGenerator" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 09h 36m 04s.xml">
+    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 11h 06m 31s.xml">
       <configuration name="TestQuerySchemaGenerator" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 09h 37m 52s.xml">
+    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 11h 08m 12s.xml">
       <configuration name="TestQuerySchemaGenerator" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 09h 38m 34s.xml">
-      <configuration name="TestQuerySchemaGenerator" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestQuerySchemaGenerator - 2016.02.18 at 10h 30m 22s.xml">
-      <configuration name="TestQuerySchemaGenerator" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.02.18 at 09h 32m 21s.xml">
+    <history-entry file="TestSqlQueryParser - 2016.02.18 at 11h 05m 20s.xml">
       <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.02.18 at 10h 26m 32s.xml">
+    <history-entry file="TestSqlQueryParser - 2016.02.18 at 11h 06m 13s.xml">
       <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.02.18 at 10h 29m 46s.xml">
+    <history-entry file="TestSqlQueryParser - 2016.02.18 at 11h 07m 21s.xml">
       <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.02.18 at 10h 29m 54s.xml">
+    <history-entry file="TestSqlQueryParser - 2016.02.18 at 11h 07m 51s.xml">
       <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSqlQueryParser - 2016.02.18 at 11h 09m 24s.xml">
+      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTreeHashGeneration - 2016.02.18 at 11h 08m 21s.xml">
+      <configuration name="TestTreeHashGeneration" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -824,6 +835,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874015" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20884521" sideWeight="0.48676172" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33037475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297561" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -837,7 +849,6 @@
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969558" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33066133" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1243,18 +1254,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/TestTreeHashGeneration.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6818182">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sparksql.g4">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="435" column="43" selection-start-line="435" selection-start-column="43" selection-end-line="435" selection-end-column="43" />
+          <caret line="226" column="5" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1262,15 +1265,23 @@
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="10" selection-start-column="2" selection-end-line="14" selection-end-column="5" />
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/TestTreeHashGeneration.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestSqlQueryParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20454545">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.09090909">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
         </state>
       </provider>

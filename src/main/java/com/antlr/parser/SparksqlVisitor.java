@@ -251,6 +251,12 @@ public interface SparksqlVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitColumn_name(SparksqlParser.Column_nameContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SparksqlParser#id_2}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitId_2(SparksqlParser.Id_2Context ctx);
+	/**
 	 * Visit a parse tree produced by {@link SparksqlParser#table_name}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
