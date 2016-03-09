@@ -193,6 +193,7 @@ function_call
     | CURRENT_TIMESTAMP ('(' ')')?
     | COALESCE '(' expression_list ')'
     | CHECKSUM '(' '*' ')'
+    | LENGTH '(' expression ')'
     ;
 
 all_distinct_expression
@@ -264,6 +265,7 @@ predicate
     | expression NOT? BETWEEN expression AND expression
     | expression NOT? IN '(' (subquery | expression_list) ')'
     | expression NOT? LIKE expression (ESCAPE expression)?
+    | expression NOT? RLIKE expression (ESCAPE expression)?
     | expression IS null_notnull
     | '(' search_condition ')'
     ;
@@ -542,6 +544,8 @@ KEY:                             K E Y;
 KILL:                            K I L L;
 LEFT:                            L E F T;
 LIKE:                            L I K E;
+RLIKE:                           R L I K E;
+LENGTH:                          L E N G T H;
 LINENO:                          L I N E N O;
 LOAD:                            L O A D;
 MERGE:                           M E R G E;
