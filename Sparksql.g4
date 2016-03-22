@@ -182,6 +182,7 @@ aggregate_windowed_function
     | VARP '(' all_distinct_expression ')'
     | COUNT '(' ('*' | all_distinct_expression) ')'
     | COUNT_BIG '(' ('*' | all_distinct_expression) ')'
+    | HIST '(' expression_list ')'
     ;
 
 function_call
@@ -286,6 +287,7 @@ simple_id
     | APPLY
     | AUTO
     | AVG
+    | HIST
     | ROUND
     | BASE64
     | CALLER
@@ -643,6 +645,7 @@ ABSOLUTE:                        A B S O L U T E;
 APPLY:                           A P P L Y;
 AUTO:                            A U T O;
 AVG:                             A V G;
+HIST:                            H I S T;
 ROUND:                           R O U N D;
 BASE64:                          B A S E '64';
 BINARY_CHECKSUM:                 B I N A R Y '_' C H E C K S U M;

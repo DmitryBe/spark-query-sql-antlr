@@ -9,6 +9,7 @@ import scala.util.{Success, Failure}
 
 class TestSqlQueryParser extends FlatSpec with Matchers{
 
+  shouldPass("select hist(col1, 10., 100., 10) as hist from test")
   shouldPass("select col1, length(col2) from t1")
   shouldPass("select col1, col2 from t1 where col1 rlike '^val'")
   shouldPass("select t1.col1 as c1, t1.col2.f1.sf1 as c2 from table1 as t1")
