@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="886e7aa3-2c62-47dc-8685-6b1b689c7cf6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/parser/QueryAnalyser.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/spark-query-sql-antlr-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/spark-query-sql-antlr-build.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/spark-query-sql-antlr.iml" afterPath="$PROJECT_DIR$/.idea/modules/spark-query-sql-antlr.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala" afterPath="$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala" />
     </list>
     <ignored path="spark-query-sql-antlr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,55 +78,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QueryHashGenerator.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/QueryHashGenerator.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#487#783#0" expanded="false" />
-                <element signature="e#787#1111#0" expanded="false" />
-                <element signature="e#1115#1229#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuerySchemaGenerator.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/QuerySchemaGenerator.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="101" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-              <folding>
-                <element signature="e#1316#1500#0" expanded="false" />
-                <element signature="e#1504#1788#0" expanded="false" />
-                <element signature="e#1792#2691#0" expanded="false" />
-                <element signature="e#2695#3273#0" expanded="false" />
-                <element signature="e#3277#3642#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestQuerySchemaGenerator.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TestQueryAnalyser.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9347826">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.21818182">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryAnalyser.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/QueryAnalyser.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+              <folding>
+                <element signature="e#2382#3529#0" expanded="false" />
+                <element signature="e#3533#4196#0" expanded="false" />
+                <element signature="e#4329#4618#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sparksql.g4" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sparksql.g4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparksqlParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="937" column="28" selection-start-line="937" selection-start-column="28" selection-end-line="937" selection-end-column="28" />
+              <folding>
+                <element signature="e#145002#145003#0" expanded="true" />
+                <element signature="e#145064#145065#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,14 +161,13 @@
         <option value="$PROJECT_DIR$/Sparksql.g4" />
         <option value="$PROJECT_DIR$/src/test/scala/TestSqlQueryParser.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/parser/QueryAnalyser.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1680" />
-    <option name="y" value="-300" />
-    <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -225,12 +222,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="spark-query-sql-antlr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -317,7 +320,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="QuerySchemaGenerator.scala" />
+              <option name="myItemId" value="QueryHashGenerator.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,7 +350,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="QueryHashGenerator.scala" />
+              <option name="myItemId" value="QueryAnalyser.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,16 +375,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,17 +556,6 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
       <module name="" />
       <envs />
       <method />
@@ -806,7 +792,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1454029394311" />
+    <option name="lastUpdateTimestamp" value="1459345294918" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -834,7 +820,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/Downloads/scala-koans" value="1431769848000" />
-        <entry key="$PROJECT_DIR$" value="1454029381000" />
+        <entry key="$PROJECT_DIR$" value="1459345249000" />
       </map>
     </option>
     <option name="externalProjectsViewState">
@@ -855,46 +841,46 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 23m 24s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 28m 29s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 23m 36s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 31m 05s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 24m 53s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 32m 09s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 25m 02s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 37m 07s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 25m 11s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 37m 27s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 25m 47s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 38m 17s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 25m 55s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 38m 45s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 26m 07s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 39m 30s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 26m 18s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 40m 20s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestSqlQueryParser - 2016.03.22 at 17h 26m 33s.xml">
-      <configuration name="TestSqlQueryParser" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestQueryAnalyser - 2016.03.31 at 00h 40m 49s.xml">
+      <configuration name="TestQueryAnalyser" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="-300" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297561" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288201" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -903,21 +889,21 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3625678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730561" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18104367" sideWeight="0.48676172" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2676311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24652778" sideWeight="0.48676172" order="0" side_tool="false" content_ui="combo" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297561" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24902724" sideWeight="0.5132383" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3496377" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4126612" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969558" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2676311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -970,36 +956,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala</url>
-          <line>13</line>
+          <line>17</line>
           <properties />
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="120" />
+          <option name="timeStamp" value="121" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="121" />
+      <option name="time" value="144" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1008,27 +970,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlBaseVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="121" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sparksql.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="229" column="25" selection-start-line="229" selection-start-column="6" selection-end-line="229" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/TestTreeHashGeneration.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlBaseVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1178,13 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/SqlInvalidException.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20507812">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/antlr-4.5.1-complete.jar!/org/antlr/v4/runtime/Parser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35051546">
@@ -1238,13 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15570934">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.5.1-complete.jar!/org/antlr/v4/runtime/tree/TerminalNodeImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8304498">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1324,54 +1251,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestSqlQueryParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70971864">
+        <state vertical-scroll-proportion="0.302926">
           <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-          <folding>
-            <element signature="e#3639#3849#0" expanded="false" />
-            <element signature="e#3853#4113#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/QueryHashGenerator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#487#783#0" expanded="false" />
-            <element signature="e#787#1111#0" expanded="false" />
-            <element signature="e#1115#1229#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlBaseVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35549873">
-          <caret line="334" column="66" selection-start-line="334" selection-start-column="66" selection-end-line="334" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlParser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33248082">
-          <caret line="4787" column="24" selection-start-line="4787" selection-start-column="24" selection-end-line="4787" selection-end-column="24" />
+        <state vertical-scroll-proportion="1.4439746">
+          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/SqlInvalidException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22198732">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sparksql.g4">
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.5.1-complete.jar!/org/antlr/v4/runtime/tree/ParseTree.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33245033">
-          <caret line="351" column="11" selection-start-line="351" selection-start-column="6" selection-end-line="351" selection-end-column="11" />
+        <state vertical-scroll-proportion="-7.2222223">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/SqlQueryParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23017903">
+        <state vertical-scroll-proportion="0.38054967">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding>
             <element signature="e#20#45#0" expanded="true" />
@@ -1381,32 +1295,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/QuerySchemaGenerator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.08033827">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <element signature="e#1316#1500#0" expanded="false" />
-            <element signature="e#1504#1788#0" expanded="false" />
-            <element signature="e#1792#2691#0" expanded="false" />
-            <element signature="e#2695#3273#0" expanded="false" />
-            <element signature="e#3277#3642#0" expanded="false" />
+            <element signature="e#20#81#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/TestQuerySchemaGenerator.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+          <caret line="937" column="28" selection-start-line="937" selection-start-column="28" selection-end-line="937" selection-end-column="28" />
           <folding>
-            <element signature="e#0#80#0" expanded="true" />
+            <element signature="e#145002#145003#0" expanded="true" />
+            <element signature="e#145064#145065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/antlr-4.5.1-complete.jar!/org/antlr/v4/runtime/tree/TerminalNodeImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20179372">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sparksql.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib_managed/srcs/org.scalatest/scalatest_2.10/scalatest_2.10-2.0-sources.jar!/org/scalatest/Transformer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22198732">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/antlr/parser/SparksqlBaseVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3744395">
+          <caret line="117" column="33" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/QueryHashGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15856236">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/parser/QueryAnalyser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+          <folding>
+            <element signature="e#2382#3529#0" expanded="false" />
+            <element signature="e#3533#4196#0" expanded="false" />
+            <element signature="e#4329#4618#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestQueryAnalyser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9347826">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.21818182">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
