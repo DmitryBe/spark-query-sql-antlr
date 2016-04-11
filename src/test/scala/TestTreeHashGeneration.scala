@@ -53,7 +53,7 @@ class TestTreeHashGeneration extends FlatSpec with Matchers{
 
   _validate(
     ( "select t.col2, t2.col1, CASE WHEN t.gt0 = '1' AND t.gt1 = '1' then 2 else 1 END as allele_count from tab1 as t inner join tab2 as t2 on t1.c1 = t2.c1",
-      "select t2.col1, t.col2, CASE WHEN t.gt1 = '1' and t.gt0 = '1' then 2 else 1 END as allele_count from tab1 as t inner join tab2 as t2 on t2.c1 = t1.c1",
+      "select t2.col1, t.col2, CASE WHEN t.gt0 = '1' AND t.gt1 = '1' then 2 else 1 END as allele_count from tab1 as t inner join tab2 as t2 on t1.c1 = t2.c1",
       true
       )
   )

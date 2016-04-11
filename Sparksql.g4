@@ -160,6 +160,7 @@ expression
     | op=('+' | '-') expression
     | expression op=('+' | '-' | '&' | '^' | '|') expression
     | expression comparison_operator expression
+    | expression (',' expression)+
     ;
 
 case_expr
