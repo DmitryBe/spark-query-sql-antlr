@@ -9,8 +9,7 @@ import scala.util.{Success, Failure}
 
 class TestSqlQueryParser extends FlatSpec with Matchers{
 
-
-  shouldPass("select count(*) as ALLCOUNT, count(distinct themata_individual_id, a) as DISTINCTCOUNT from rdd1")
+  shouldPass("select count(*) as ALLCOUNT, count(distinct c1, c2) as DISTINCTCOUNT from rdd1")
   shouldPass("select hist(col1, 10., 100., 10) as hist from test")
   shouldPass("select col1, length(col2) from t1")
   shouldPass("select col1, col2 from t1 where col1 rlike '^val'")

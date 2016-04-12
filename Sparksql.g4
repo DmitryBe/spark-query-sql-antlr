@@ -160,7 +160,6 @@ expression
     | op=('+' | '-') expression
     | expression op=('+' | '-' | '&' | '^' | '|') expression
     | expression comparison_operator expression
-    | expression (',' expression)+
     ;
 
 case_expr
@@ -181,7 +180,7 @@ aggregate_windowed_function
     | STDEVP '(' all_distinct_expression ')'
     | VAR '(' all_distinct_expression ')'
     | VARP '(' all_distinct_expression ')'
-    | COUNT '(' ('*' | all_distinct_expression) ')'
+    | COUNT '(' ('*' | all_distinct_expression (',' expression)* ) ')'
     | COUNT_BIG '(' ('*' | all_distinct_expression) ')'
     | HIST '(' expression_list ')'
     ;
